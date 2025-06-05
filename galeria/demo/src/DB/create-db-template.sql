@@ -1,0 +1,2 @@
+CREATE DATABASE banco_imagens
+    DEFAULT CHARACTER SET = 'utf8mb4';
