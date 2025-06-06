@@ -22,7 +22,7 @@ public class imagemModel {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, length = 400)
+    @Column(length = 400)
     private String name;
 
     @Column()

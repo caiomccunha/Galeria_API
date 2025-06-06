@@ -17,6 +17,7 @@ import galeria.demo.Model.imagemModel;
 import galeria.demo.Service.imagemService;
 
 @RestController
+
 @CrossOrigin (origins = "*")
 
 @RequestMapping("api/galeria")

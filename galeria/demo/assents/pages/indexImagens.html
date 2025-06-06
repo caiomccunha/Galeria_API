@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeria de Imagens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+
+    <!-- Navegação -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a class="text-white font-bold text-xl" href="#">Galeria</a>
+      </div>
+    </nav>
+
+    <!-- Formulário -->
+    <div class="container mx-auto mt-8 p-4">
+      <h2 class="text-2xl font-bold mb-4">Adicionar Imagem</h2>
+        <div class="mb-4">
+          <label for="urlImagem" class="block text-gray-700 font-bold mb-2">URL da Imagem</label>
+          <input type="text" id="urlImagem" class="w-full px-3 py-2 border rounded" placeholder="https://..." required />
+        </div>
+        <button onclick="Adicionar()" type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Adicionar</button>
+
+    
+
+      <!-- Galeria -->
+      <h2 class="text-2xl font-bold mt-8 mb-4">Imagens</h2>
+      <div id="containerImagens" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/indexGaleria.js"></script>
+  </body>
+</html>
