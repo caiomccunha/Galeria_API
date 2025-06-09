@@ -1,8 +1,14 @@
 // Carrega imagens ao iniciar
-fetch('http://localhost:8080/api/galeria')
+fetch('http://localhost:8080/api/galeria',{
+  method: 'GET',
+headers: {
+  'Content-Type' : 'application/json'
+},
+})
+
   .then(res => res.json())
   .then(data => mostrarImagens(data))
-  .catch(err => console.error('Erro ao carregar imagens:', error));
+  .catch(error => console.error('Erro ao carregar imagens:', error));
 
 // Exibe as imagens na galeria
 function mostrarImagens(imagens) {
